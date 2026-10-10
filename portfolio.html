@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A selection of portfolio design work by Nel Angelo Cauan.">
+  <title>Portfolio | Nel Angelo Cauan</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="OneUp Real Estate home">
+        <img src="images/oneuprestate.png" alt="" class="brand-logo">
+        <span class="brand-text">
+          ONEUP
+          <small>REAL ESTATE</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="nav-links">☰</button>
+
+      <div class="nav-links" id="nav-links">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#properties">Properties</a>
+        <a href="index.html#about">About</a>
+        <a href="portfolio.html" aria-current="page">Portfolio</a>
+        <a href="NEL%20ANGELO%20RESUME.pdf" data-preview-src="NEL%20ANGELO%20RESUME.pdf"
+          data-preview-type="pdf" data-preview-title="Resume">Resume</a>
+        <a href="index.html#contact" class="nav-contact">Contact Us</a>
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          type="button"
+          aria-label="Switch to dark mode"
+          aria-pressed="false">
+          ☾
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="container portfolio-page">
+    <header class="portfolio-heading">
+      <p class="eyebrow">SELECTED WORK</p>
+      <h1>My Portfolio</h1>
+      <p>A collection of design work from my portfolio folder.</p>
+    </header>
+
+    <section class="portfolio-gallery" aria-label="Portfolio projects">
+      <article class="portfolio-work-card">
+        <a href="portfolio/Portfolio%20template%201.jpg" data-preview-src="portfolio/Portfolio%20template%201.jpg"
+          data-preview-type="image" data-preview-title="Portfolio Design 1"
+          aria-label="Preview Portfolio Design 1">
+          <img src="portfolio/Portfolio%20template%201.jpg" alt="Portfolio design template 1">
+        </a>
+        <h2>Portfolio Design 1</h2>
+      </article>
+      <article class="portfolio-work-card">
+        <a href="portfolio/Portfolio%20template%202.jpg" data-preview-src="portfolio/Portfolio%20template%202.jpg"
+          data-preview-type="image" data-preview-title="Portfolio Design 2"
+          aria-label="Preview Portfolio Design 2">
+          <img src="portfolio/Portfolio%20template%202.jpg" alt="Portfolio design template 2">
+        </a>
+        <h2>Portfolio Design 2</h2>
+      </article>
+      <article class="portfolio-work-card">
+        <a href="portfolio/Portfolio%20template%203.jpg" data-preview-src="portfolio/Portfolio%20template%203.jpg"
+          data-preview-type="image" data-preview-title="Portfolio Design 3"
+          aria-label="Preview Portfolio Design 3">
+          <img src="portfolio/Portfolio%20template%203.jpg" alt="Portfolio design template 3">
+        </a>
+        <h2>Portfolio Design 3</h2>
+      </article>
+    </section>
+  </main>
+
+  <dialog id="portfolio-preview" class="portfolio-preview-modal"
+    aria-labelledby="portfolio-preview-title">
+    <div class="portfolio-preview-content">
+      <button id="close-portfolio-preview" class="close-modal" type="button"
+        aria-label="Close preview">×</button>
+      <h2 id="portfolio-preview-title" class="visually-hidden"></h2>
+      <img id="portfolio-preview-image" alt="" hidden>
+      <iframe id="portfolio-preview-pdf" title="Resume preview" hidden></iframe>
+    </div>
+  </dialog>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> OneUp Real Estate</p>
+      <p>Fictional real estate concept — Portfolio demonstration only.-- by Nel Angelo Cauan</p>
+    </div>
+  </footer>
+</body>
+</html>
